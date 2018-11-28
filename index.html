@@ -43,6 +43,7 @@
         .narrow {
             max-width: 46rem;
             margin: 0 auto;
+            margin-bottom: 5rem;
         }
 
         .row {
@@ -56,6 +57,16 @@
         .cols .col {
             flex: 1;
             margin: 1rem;
+        }
+
+        a {
+            color: #2B6DFF;
+            text-decoration: none;
+            transition: all 0.1s ease-in-out;
+        }
+
+        a:hover {
+            color: #02569C;
         }
 
         .button {
@@ -75,13 +86,36 @@
             margin-bottom: 1.5rem;
         }
 
+        .button:hover {
+            background-color: #02569C;
+            color: #fff;
+        }
+
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             line-height: 1.3em;
+        }
+
+        img {
+            max-width: 100%;
+            border: 0.4rem;
+            border-radius: 0.4rem;
+            box-shadow: 0 0 5px 0 #aaa;
         }
 
 
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-7092063-9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-7092063-9');
+</script>
+
 
 </head>
 <body>
@@ -92,7 +126,7 @@
             <div class="narrow" style="text-align: center;">
 
                 <h1>Add Meetings from Slush&nbsp;Matchmaking to Your&nbsp;Calendar</h1>
-                <p>Here's an easy way to get all the meetings from Slush Matchmaking to your own calendar. This bookmarklet will create an export-file from Slush Matchmaking, which you can then import to your favorite calendar tool.</p>
+                <p>An easy way to export all your <a href="https://slush.org" target="_blank">Slush</a> Matchmaking meetings, and import those into your favorite calendar tool.</p>
                 <a id="bookmarklet" href="foo" class="button" name="Foofaa" title="lol"><span class="small" style="display: block; font-size: 0.75rem; opacity: 0.9; margin-top: -0.3rem">Slush Matchmaking export</span>Start by dragging me to your bookmarks</a>
 
             </div>
@@ -100,28 +134,27 @@
             <div class="cols">
                 <div class="col">
                     <h4>1. Install the bookmarklet</h4>
-                    <p>You can just drag & drop the button to your bookmarks bar in the browser. It's that simple!</p>
+                    <p>Drag & Drop it to your bookmarks</p>
+                    <img src="img/drag-bookmark.png" alt="">
                 </div>
 
                 <div class="col">
-                    <h4>2. Go to Slush Matchmaking</h4>
+                    <h4>2. Click it in Slush Matchmaking</h4>
                     <p>Navigate to the <a href="https://platform.slush.org/slush18/matchmaking/my-meetings" target="_blank">list of all your meetings</a>.</p>
+                    <img src="img/click-bookmarklet.png" alt="">
                 </div>
 
-                <div class="col">
-                    <h4>3. Export all your meetings</h4>
-                    <p>Click the bookmarklet to download an export of all your meetings</p>
-                </div>
 
                 <div class="col">
-                    <h4>4. Add meetings to calendar</h4>
+                    <h4>3. Add meetings to calendar</h4>
                     <p>You can easily import the file to your calendar</p>
+                    <img src="img/import-calendar.png" alt="">
                 </div>
 
             </div>
 
 
-            <p style="text-align: center;">Note, that this project is in no way affiliated with <a href="https://slush.org" target="_blank">Slush</a> organizers. Made by <a href="https://twitter.com/laurihy" target="_blank">@laurihy</a></p>
+            <p style="text-align: center;">This project is in no way affiliated with <a href="https://slush.org" target="_blank">Slush</a> organizers. Made by <a href="https://twitter.com/laurihy" target="_blank">@laurihy</a></p>
 
         </div>
 
