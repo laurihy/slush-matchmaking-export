@@ -5,22 +5,7 @@
     <title>Export Slush Matchmaking to your calendar</title>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" type="image/png" href="https://laurihy.github.io/slush-matchmaking-export/">
-
-    <script type="text/javascript">
-
-        function updateBookmarklet(content) {
-            var link = document.getElementById('bookmarklet');
-            link.href = 'javascript:' + encodeURIComponent(content)
-        }
-
-        fetch('main.js')
-          .then(function(response) {
-            return response.text();
-          })
-          .then(updateBookmarklet);
-
-    </script>
+    <link rel="icon" type="image/png" href="https://laurihy.github.io/slush-matchmaking-export/favicon.png">
 
     <style>
 
@@ -126,14 +111,14 @@
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-7092063-9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7092063-9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-7092063-9');
-</script>
+      gtag('config', 'UA-7092063-9');
+    </script>
 
 
 </head>
@@ -178,6 +163,21 @@
         </div>
 
     </div>
+
+    <script type="text/javascript">
+
+        function updateBookmarklet(content) {
+            var link = document.getElementById('bookmarklet');
+            link.href = 'javascript:' + encodeURIComponent(content)
+        }
+
+        fetch('main.js')
+          .then(function(response) {
+            return response.text();
+          })
+          .then(updateBookmarklet);
+
+    </script>
 
 
 
