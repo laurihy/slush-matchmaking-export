@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Export Slush Matchmaking to your calendar</title>
 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
     <script type="text/javascript">
 
         function updateBookmarklet(content) {
@@ -52,6 +55,22 @@
 
         .cols {
             display: flex;
+        }
+
+        @media screen  and (max-width: 900px) {
+
+          html {
+            font-size: 16px;
+          }
+
+          .cols {
+            display: block;
+          }
+
+          .cols .col {
+            margin-top: 2rem;
+            margin-bottom: 3rem !important;
+          }
         }
 
         .cols .col {
